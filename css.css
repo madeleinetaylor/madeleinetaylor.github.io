@@ -19,3 +19,10 @@
     text-decoration: none;
     color: black;
 }
+.pic{
+    outline: black;
+    outline-width: 2px;
+    outline-style: solid;
+    border-radius: 10%;
+    
+}

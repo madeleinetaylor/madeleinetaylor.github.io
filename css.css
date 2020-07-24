@@ -4,10 +4,16 @@
     padding-left: 25px;
     padding-right: 25px;
     color: black;
-
-
 }
-
+.menubar:hover{
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: black;
+    font-weight: bold;
+    
+}
 .title{
     font-size: 100px;
     text-decoration: none;

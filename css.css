@@ -10,13 +10,17 @@
     text-decoration: none;
     padding-left: 25px;
     padding-right: 25px;
-    color: black;
-    font-weight: bold;
-}
+    color: purple;
+}    
 .title{
     font-size: 100px;
     text-decoration: none;
     color: black;
+}
+.title:hover{
+    font-size: 100px;
+    text-decoration: none;
+    color: purple;
 }
 .pic{
     border-radius: 10%;
@@ -27,3 +31,7 @@
 .tdnone{
     text-decoration: none;
 }
+::selection {
+    color: white;
+    background: purple;
+  }

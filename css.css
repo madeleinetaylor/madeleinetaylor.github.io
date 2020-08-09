@@ -32,6 +32,10 @@
 .a{
     color: purple;
 }
+.a:hover{
+    color: black;
+    text-decoration: none;
+}
 ::selection {
     color: floralwhite;
     background: purple;

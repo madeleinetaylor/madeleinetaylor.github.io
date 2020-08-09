@@ -16,13 +16,11 @@
     font-size: 100px;
     text-decoration: none;
     color: black;
-    font-family: 'Pacifico', cursive;
 }
 .title:hover{
     font-size: 100px;
     text-decoration: none;
     color: purple;
-    font-family: 'Pacifico', cursive;
 }
 .logo{
     padding: 5px;

@@ -1,0 +1,14 @@
+.rside{
+    float: left;
+    width: 25%;
+}
+.lside{
+    float: left;
+    width: 75%;
+}
+@media screen and (max-width: 700px) {
+    .rside, .lside {
+      width: 100%;
+      padding: 0;
+    }
+}

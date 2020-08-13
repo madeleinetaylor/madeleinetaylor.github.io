@@ -1,12 +1,12 @@
 .menubar{
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     padding-left: 25px;
     padding-right: 25px;
     color: black;
 }
 .menubar:hover{
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     padding-left: 25px;
     padding-right: 25px;
@@ -53,4 +53,9 @@
 .menuright{
     float: left;
     width: 20%;
+}
+@media screen and (max-width: 700px) {
+    .menu2, .menu2:hover{
+      font-size: 15px;
+    }
 }

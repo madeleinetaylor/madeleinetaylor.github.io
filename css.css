@@ -61,3 +61,13 @@
     color: floralwhite;
     background: purple;
   }
+@media screen and (max-width: 800px) {
+    .title, .title:hover{
+      font-size: 80px
+    }
+}
+@media screen and (max-width: 800px) {
+    .logo{
+      width: 60px;
+    }
+}

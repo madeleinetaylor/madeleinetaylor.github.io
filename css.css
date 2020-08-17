@@ -6,7 +6,7 @@
 .title:hover{
     font-size: 150px;
     text-decoration: none;
-    color: purple;
+    color: #a796e4;
 }
 .logo{
     padding: 5px;
@@ -19,7 +19,7 @@
     width: 50px;
 }
 .a{
-    color: purple;
+    color: #a796e4;
 }
 .a:hover{
     color: black;
@@ -34,8 +34,8 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: purple;
-    color: floralwhite;
+    background-color: #fcb062;
+    color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 50px;
@@ -50,16 +50,16 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: floralwhite;
-    color: purple;
+    background-color: white;
+    color: #fcb062;
     cursor: progress;
     padding: 15px;
     border-radius: 50px;
     font-family: Poppins;
 }
 ::selection {
-    color: floralwhite;
-    background: purple;
+    color: black;
+    background: #b5e1da;
   }
 @media screen and (max-width: 800px) {
     .title, .title:hover{

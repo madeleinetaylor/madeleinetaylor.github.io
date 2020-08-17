@@ -10,7 +10,7 @@
     text-decoration: none;
     padding-left: 25px;
     padding-right: 25px;
-    color: purple;
+    color: #a796e4;
 }
 .menu2{
     font-size: 25px;
@@ -32,13 +32,17 @@
     border-radius: 20%;
     background-color: #a796e4;
 }
-.menuleft{
-    float: left;
-    width: 80%;
+.footer{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
 }
-.menuright{
-    float: left;
-    width: 20%;
+.footer:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #fcb062;
+    cursor: not-allowed;
 }
 @media screen and (max-width: 700px) {
     .menu2, .menu2:hover{

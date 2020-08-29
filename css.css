@@ -28,6 +28,18 @@
     text-decoration: none;
     background-color: #a796e4;
 }
+.draglink{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #a796e4;
+    cursor: all-scroll;
+}
+.draglink:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #a796e4;
+    cursor: all-scroll;
+}
 #myBtn {
     display: none;
     position: fixed;

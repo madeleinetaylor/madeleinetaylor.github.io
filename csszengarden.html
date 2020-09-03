@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Zen Garden | Madeleine Taylor</title>
+<link rel="icon" href="photos/newgithublogo.png">
+</head>
+<!--Fonts-->
+
+<style>
+    
+</style>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Scroll up">TOP</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<h1>CSS Zen Garden</h1>
+<h4>No CSS</h4>
+
+<a href="blank.html">Blank</a>
+<a href="blank.html">Blank</a>
+<a href="blank.html">Blank</a>
+<a href="blank.html">Blank</a>
+
+<a href="index.html">Back to homepage</a>
+
+<h2>About</h2>
+<p>I got the idea from a website called CSS Zen Garden, where you download their HTML (HTML is used for the website content) and add CSS, but it was really complicated since their HTML code was complicated.</p>
+<a href="http://csszengarden.com/">CSS Zen Garden</a>
+
+<h2>The Rules</h2>
+<ol>
+    <li>I can change the CSS.</li>
+    <li>I can change the logo and favicon.</li>
+    <li>I can add "div" tags to separate things into classes</li>
+    <li>I can add "br" tags to create empty space.</li> 
+    <li>I can change the title and subtitle (which is where I'm going to display the name of the design).</li>
+    I can add text alignment tags such as "center".</li>
+</ol>
+
+<a href="https://whimsicalwatercolor.wordpress.com/">Whimsical Watercolor</a>
+<p>Come check out my art blog, Whimsical Watercolor! I post tutorials, random artwork and sometimes other stuff.</p>
+
+<a href="https://society6.com/madeleinetaylor">My Shop</a>
+<p>Check out my shop! I have various products with my art on them.</p>
+
+<h2>Now for some art, because I need more content on this page.</h2>
+<img src="photos/shellpainting.jpeg" alt="Shell Painting">
+<img src="photos/Thing (14).png" alt="Psalm 2:31">
+<img src="photos/butterfly4.jpeg" alt="Butterfly">
+
+</body>
+</html>

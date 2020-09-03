@@ -2,19 +2,23 @@
 <html>
 <head>
 <title>Pastel Blocks | Madeleine Taylor</title>
-<link rel="icon" href="photos/newgithublogo.png">
+<link rel="icon" href="photos/Pastel Blocks Logo.png">
 </head>
 <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 <style>
     .title{
-        font-family: Playfair Display;
+        font-family: Abril Fatface;
         font-size: 70px;
         padding-bottom: 10px;
     }
+    .logo{
+        width: 200px;
+    }
     .subtitle{
-        font-family: Playfair Display;
+        font-family: Abril Fatface;
         font-size: 25px;
     }
     .hover:hover{
@@ -31,6 +35,9 @@
         padding-right: 20px;
         padding-left: 20px
         
+    }
+    .abril{
+        font-family: Abril Fatface;
     }
     .menubar:hover{
         text-decoration: none;
@@ -57,13 +64,14 @@
         text-decoration: none;
         font-size: 25px;
         color: #f38181;
+        font-family: Abril Fatface;
     }
     .titleside{
-        width: 30%;
+        width: 40%;
         float: left;
     }
     .menuside{
-        width: 70%;
+        width: 60%;
         float: left;
     }
     .aboutside{
@@ -161,37 +169,41 @@ function topFunction() {
 </script>
 
 <div class="titleside">
+    <img src="photos/Pastel Blocks Logo.png" class="logo">
     <div class="hover">
-        <h1 class="title">CSS ZEN GARDEN</h1>
+        <h1 class="title">CSS Zen Garden</h1>
         <h4 class="subtitle">Pastel Blocks</h4>
     </div>
 </div>
 
 
 <div class="menuside">
-    <a href="blank.html" class="menubar">Blank</a>
-    <a href="blank.html" class="menubar">Blank</a>
+    <a href="csszengarden.html" class="menubar">HTML</a>
+    <a href="pastelblocks.html" class="menubar">Pastel Blocks</a>
     <a href="blank.html" class="menubar">Blank</a>
     <a href="blank.html" class="menubar">Blank</a>
     <a href="index.html" class="menubar">Home</a>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr style="border:2px solid #756c83;"/>
+<br><br><br>
 
 <div class="aboutside">
-    <h2>About</h2>
+    <h2 class="abril">About</h2>
     <p>I got the idea from a website called CSS Zen Garden, where you download their HTML (HTML is used for the website content) and add CSS, but it was really complicated since their HTML code was complicated. Check out how I made these pages at my blog!</p>
-    <a href="https://whimsicalwatercolor.wordpress.com/" class="href">My blog</a>
-    <a href="http://csszengarden.com/" class="href">CSS Zen Garden</a>
+    <a href="https://whimsicalwatercolor.wordpress.com/" class="href" target="_blank">My blog</a>
+    <a href="http://csszengarden.com/" class="href" target="_blank">CSS Zen Garden</a>
+    <a href="csszengarden.html" class="href">View the untouched HTML.</a>
 
     <br><br><br><br>
 
-    <a href="https://whimsicalwatercolor.wordpress.com/" class="hreftitles">Whimsical Watercolor</a>
+    <a href="https://whimsicalwatercolor.wordpress.com/" class="hreftitles" target="_blank">Whimsical Watercolor</a>
     <p>Come check out my art blog, Whimsical Watercolor! I post tutorials, random artwork and sometimes other stuff.</p>
 </div>
 
 <div class="rulesside">
-<h2>The Rules</h2>
+<h2 class="abril">The Rules</h2>
     <ol>
         <li>I can change the CSS.</li>
         <li>I can change the logo and favicon.</li>
@@ -204,21 +216,27 @@ function topFunction() {
 
     <br>
 
-    <a href="https://society6.com/madeleinetaylor" class="hreftitles">My Shop</a>
+    <a href="https://society6.com/madeleinetaylor" class="hreftitles" target="_blank">My Shop</a>
     <p>Check out my shop! I have various products with my art on them.</p>
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div class="hover">
-    <h2>Now for some art, because I need more content on this page.</h2>
+    <h2 class="abril">Now for some art, because I need more content on this page.</h2>
+    <div class="left">
         <img src="photos/shellpainting.jpeg" alt="Shell Painting" title="Shell Painting">
+        <h3>Shell Painting</h3>
+    </div>
+    <div class="middle">
         <img src="photos/Thing (14).png" alt="Psalm 2:31" title="Psalm 2:31">
-        <img src="photos/butterfly4.jpeg" alt="Butterfly" title="Butterfly">
+        <h3>Psalm 2:31</h3>
+    </div>
 
-    <h3 class="left">Shell Painting</h3>
-    <h3 class="middle">Psalm 2:31</h3>
-    <h3 class="right">Butterfly</h3>
+    <div class="right">
+        <img src="photos/butterfly4.jpeg" alt="Butterfly" title="Butterfly">
+        <h3 class="right">Butterfly</h3>
+    </div>
 </div>
 
 </body>

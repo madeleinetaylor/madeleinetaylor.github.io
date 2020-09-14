@@ -2,37 +2,90 @@
 <html>
 <head>
 <link rel="stylesheet" href="css.css">
-<title>Testing | Madeleine Taylor</title>
-<link rel="icon" href="photos/madeleinetaylorlogo.png">
+<link rel="stylesheet" href="menubar.css">
+<title>Madeleine Taylor</title>
+<link rel="icon" href="photos/newgithublogo.png">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 <style>
-  .title{
-    font-family: Sacramento;
-  }
-  .body{
-    font-family: Poppins;
-  }
-  .menu2{
-    font-family: Poppins;
-  }
+    body{
+        background-image: url('photos/ombre.png');
+        font-family: Poppins;
+    }
+    .title{
+        font-family: Sacramento;
+    }
 </style>
+
 <body>
 
-<div class="lside">
-  <img src="photos/newgithublogo.png" class="logo">
-  <h1 class="title">Madeleine Taylor</h1>
+<button onclick="topFunction()" id="myBtn" title="Scroll up">TOP</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div>
+  <a href="index.html" class="menu2">HOME</a>
+<a href="menus.html" class="menu2">MENUS</a>
+<a href="responsivecss.html" class="menu2">CSS</a>
+<a href="contact.html" class="menu2">CONTACT</a>
+<a href="https://whimsicalwatercolor.wordpress.com/" target="_blank" class="menu2">BLOG ↗</a>
+<a href="https://society6.com/madeleinetaylor" target="_blank" class="menu2">SHOP ↗</a>
 </div>
 
-<div class="rside">
-  <a href="index.html" class="menu2">HOME</a>
-  <a href="menus.html" class="menu2">MENUS</a>
-  <a href="responsivecss.html" class="menu2">CSS</a>
-  <a href="contact.html" class="menu2">CONTACT</a>
-  <a href="https://whimsicalwatercolor.wordpress.com/" target="_blank" class="menu2">BLOG ↗</a>
-  <a href="https://society6.com/madeleinetaylor" target="_blank" class="menu2">SHOP ↗</a>
-</div>
+<a href="index.html">
+    <center><img src="photos/newgithublogo.png" class="logo"></center>
+  </a>
+<center><a href="index.html" class="title">Madeleine Taylor</a></center>
+<center>
+  <h4>TESTING</h4>
+</center>
+<hr style="border:2px solid #a796e4;"/>
+<hr style="border:2px solid #a796e4;"/>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
+
+<!--Footer-->
+<br>
+
+  <hr style="border:2px solid #a796e4;"/>
+  <center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="a">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></center>
+  <br>
+  <center></a><br />I coded this website completely with HTML and CSS. My <a rel="license" href="https://timsportfolio.github.io/" target="_blank" class="a">brother</a><p>helped me too.</p></center>
+  <br>
+  <center>
+    <a href="index.html" class="footer">HOME</a>
+    <a href="menus.html" class="footer">MENUS</a>
+    <a href="responsivecss.html" class="footer">CSS</a>
+    <a href="contact.html" class="footer">CONTACT</a>
+  </center>
 
 </body>
 </html>

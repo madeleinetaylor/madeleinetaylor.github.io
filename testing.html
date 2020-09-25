@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css.css">
-<link rel="stylesheet" href="menubar.css">
 <title>Madeleine Taylor</title>
 <link rel="icon" href="photos/newgithublogo.png">
 </head>
 <!--Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
 <style>
     body{
-        background-image: url('photos/ombre.png');
-        font-family: Poppins;
+        font-family: Lato;
     }
     .title{
-        font-family: Sacramento;
+        font-family: Epilogue;
+        font-size: 150px;
+        background-image: url(photos/dough.jpg);
+        padding-top: 250px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 250px;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center; 
+        border-radius: 10px;
+    }
+    #myBtn{
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #28272c;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50px;
+      font-family: Epilogue;
+    }
+    .subtitle{
+      font-family: Epilogue;
+        font-size: 50px;
+    }
+    .left{
+      float: left;
+      width: 30%;
+      padding-left: 50px;
+    }
+    .middle{
+      float: left;
+      width: 30%;
+    }
+    .right{
+      float: left;
+      width: 30%;
+    }
+    .paddingonthebottom{
+      padding-bottom: 250px;
+    }
+    @media screen and (max-width: 700px) {
+    .left, .middle, .right{
+      width: 100%;
+      padding: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .title{
+      font-size: 70px;
     }
 </style>
 
@@ -45,47 +101,25 @@ function topFunction() {
 }
 </script>
 
-<div>
-  <a href="index.html" class="menu2">HOME</a>
-<a href="menus.html" class="menu2">MENUS</a>
-<a href="responsivecss.html" class="menu2">CSS</a>
-<a href="contact.html" class="menu2">CONTACT</a>
-<a href="https://whimsicalwatercolor.wordpress.com/" target="_blank" class="menu2">BLOG ↗</a>
-<a href="https://society6.com/madeleinetaylor" target="_blank" class="menu2">SHOP ↗</a>
+
+<center><h1 class="title">Generic Italian Restaurant</h1></center>
+
+<div class="left">
+  <h1 class="subtitle">About Us</h1>
+  <p>Here at Generic Italian Restaurant, we strive to be average. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<a href="index.html">
-    <center><img src="photos/newgithublogo.png" class="logo"></center>
-  </a>
-<center><a href="index.html" class="title">Madeleine Taylor</a></center>
-<center>
-  <h4>TESTING</h4>
-</center>
-<hr style="border:2px solid #a796e4;"/>
-<hr style="border:2px solid #a796e4;"/>
+<div class="middle">
+  <h1 class="subtitle">Dining</h1>
+  <p>We use the most normal ingredients for our generic dishes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
+<div class="right">
+  <h1 class="subtitle">Catering</h1>
+  <p class="padddingonthebottom">Our ordinary catering service will reach your low expectations. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Metus aliquam eleifend mi in. Malesuada proin libero nunc consequat interdum varius sit. Orci a scelerisque purus semper. Ut pharetra sit amet aliquam. Metus dictum at tempor commodo ullamcorper a. Lorem ipsum dolor sit amet consectetur adipiscing. At urna condimentum mattis pellentesque id nibh tortor. Felis donec et odio pellentesque diam volutpat commodo sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Ut tristique et egestas quis ipsum. Commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies integer quis. Viverra mauris in aliquam sem fringilla. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Quam quisque id diam vel quam elementum.</p>
-
-<!--Footer-->
 <br>
-
-  <hr style="border:2px solid #a796e4;"/>
-  <center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="a">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></center>
-  <br>
-  <center></a><br />I coded this website completely with HTML and CSS. My <a rel="license" href="https://timsportfolio.github.io/" target="_blank" class="a">brother</a><p>helped me too.</p></center>
-  <br>
-  <center>
-    <a href="index.html" class="footer">HOME</a>
-    <a href="menus.html" class="footer">MENUS</a>
-    <a href="responsivecss.html" class="footer">CSS</a>
-    <a href="contact.html" class="footer">CONTACT</a>
-  </center>
 
 </body>
 </html>

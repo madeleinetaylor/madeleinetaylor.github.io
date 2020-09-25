@@ -12,6 +12,26 @@
     padding: 5px;
     width: 100px;
 }
+.riddle{
+    background-color: #fcb062;
+    border-radius: 20%;
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.riddle:hover{
+    background-color: #b5e1da;
+    border-radius: 20%;
+    color: black;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .pic{
     border-radius: 10%;
 }

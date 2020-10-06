@@ -1,66 +1,34 @@
 .title{
-    font-size: 150px;
+    font-size: 100px;
     text-decoration: none;
     color: black;
 }
-.title:hover{
-    font-size: 150px;
-    text-decoration: none;
-    color: #a796e4;
-}
-.logo{
-    padding: 5px;
-    width: 100px;
-}
-.riddle{
-    background-color: #fcb062;
-    border-radius: 20%;
-    color: white;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.riddle:hover{
-    background-color: #b5e1da;
-    border-radius: 20%;
-    color: black;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.pic{
-    border-radius: 10%;
+.sep{
+    height: 50px;
 }
 .img{
-    width: 50px;
+    width: 600px;
 }
-.a{
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: #a796e4;
-}
-.a:hover{
-    color: black;
+.linktitle{
     text-decoration: none;
-    background-color: #a796e4;
-}
-.draglink{
+    font-size: 30px;
     color: black;
-    text-decoration: underline;
-    text-decoration-color: #a796e4;
-    cursor: all-scroll;
 }
-.draglink:hover{
-    color: black;
-    text-decoration: none;
-    background-color: #a796e4;
-    cursor: all-scroll;
+.left{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 45%;
+    float: left;
 }
-#myBtn {
+.right{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 45%;
+    float: left;
+}
+#myBtn{
     display: none;
     position: fixed;
     bottom: 20px;
@@ -69,40 +37,14 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #fcb062;
+    background-color: #a796e4;
     color: white;
+    border-radius: 40%;
     cursor: pointer;
     padding: 15px;
-    border-radius: 50px;
     font-family: Poppins;
 }
-#myBtn:hover {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: #fcb062;
-    cursor: progress;
-    padding: 15px;
-    border-radius: 50px;
-    font-family: Poppins;
-}
-::selection {
+::selection{
     color: black;
-    background: #b5e1da;
-  }
-@media screen and (max-width: 800px) {
-    .title, .title:hover{
-      font-size: 80px
-    }
-}
-@media screen and (max-width: 800px) {
-    .logo{
-      width: 60px;
-    }
+    background-color: #b5e1da;
 }

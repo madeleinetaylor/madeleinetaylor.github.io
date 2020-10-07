@@ -1,7 +1,15 @@
 .title{
-    font-size: 100px;
+    font-size: 125px;
     text-decoration: none;
     color: black;
+}
+.title2{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+.projecttitle{
+    font-size: 90px;
 }
 .sep{
     height: 50px;
@@ -13,6 +21,20 @@
     text-decoration: none;
     font-size: 30px;
     color: black;
+}
+.subtitle{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.link{ 
+    text-decoration: underline;
+    text-decoration-color: #b5e1da;
+    color: black;
+}
+.link:hover{
+    text-decoration: none;
+    background-color: #b5e1da;
 }
 .left{
     text-align: center;
@@ -27,6 +49,12 @@
     padding-right: 10px;
     width: 45%;
     float: left;
+}
+@media screen and (max-width: 700px) {
+    .left, .right{
+      width: 100%;
+      padding: 0;
+    }
 }
 #myBtn{
     display: none;

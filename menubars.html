@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="menubar.css">
+<title>Madeleine Taylor</title>
+<link rel="icon" href="photos/newgithublogo.png">
+</head>
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        font-family: Lexend Deca;
+    }
+    .title{
+        font-family: Sail;
+    }
+    .simple{
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .simple:hover{
+        font-weight: bold;
+    }
+    .rainbow{
+        background-color: lightgray;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-family: Comfortaa;
+    }
+    .rainbow1{
+        color: black;
+        text-decoration: none;
+    }
+    .rainbow2{
+        color: black;
+        text-decoration: none;
+    }
+    .rainbow3{
+        color: black;
+        text-decoration: none;
+    }
+    .rainbow4{
+        color: black;
+        text-decoration: none;
+    }
+    .rainbow1:hover{
+        color: red;
+        text-decoration: none;
+    }
+    .rainbow2:hover{
+        color: orange;
+        text-decoration: none;
+    }
+    .rainbow3:hover{
+        color: yellow;
+        text-decoration: none;
+    }
+    .rainbow4:hover{
+        color: green;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Scroll up">TOP</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="menu1">
+  <a href="index.html" class="menubar1">Home</a>
+  <a href="about.html" class="menubar1">About</a>
+  <a href="contact.html" class="menubar1">Contact</a>
+  <a href="https://whimsicalwatercolor.wordpress.com/" class="menubar1" target="_blank" title="Visit my blog, Whimsical Watercolor! This will open in a new tab ;)">Blog</a>
+</div>
+
+<<center><a href="index.html" class="title">Madeleine Taylor</a></center>
+<center><h4>Project: Menubars</h4></center>
+<center><img src="photos/Separators.png" class="sep"></center>
+
+<p>One of my favorite parts of designing a website is creating a unique and beautiful menubar. I think the menubar defines the theme of the website, since basically everything else is the same. So here are some menubar ideas for any website! Note: all these links except for the Menubars link goes nowhere.</p>
+
+<br>
+
+<h1>Simple</h1>
+<p>Whenever you hover over a page or on a page, it is <strong>bold</strong>.</p>
+<a href="homeblank.html" class="simple">Home</a>
+<a href="aboutblank.html" class="simple">About</a>
+<a href="blogblank.html" class="simple">Blog</a>
+<a href="menubars.html" class="simple"><strong>Menubars</strong></a>
+
+<br>
+
+<h1>Rainbow</h1>
+<p>Each page in the menubar is a different color of the rainbow when you hover over it.</p>
+<div class="rainbow">
+    <a href="homeblank.html" class="rainbow1">Home</a>
+    <a href="aboutblank.html" class="rainbow2">About</a>
+    <a href="blogblank.html" class="rainbow3">Blog</a>
+    <a href="menubars.html" class="rainbow4">Menubars</a>
+</div>
+
+</body>
+</html>

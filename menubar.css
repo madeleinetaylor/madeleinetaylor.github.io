@@ -7,11 +7,17 @@
 }
 .menu1{
     text-align: right;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     overflow: hidden;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    right: 0px;
     background-color: white;
+    border-radius: 20px;
 }
 .menubar1:hover{
     text-decoration: none;

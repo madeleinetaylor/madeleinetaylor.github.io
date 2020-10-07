@@ -17,6 +17,10 @@
 .img{
     width: 600px;
 }
+.thing:hover{
+    opacity: 70%;
+    color: rgb(92, 92, 92);
+}
 .linktitle{
     text-decoration: none;
     font-size: 30px;

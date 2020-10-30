@@ -16,6 +16,33 @@
     .title{
         font-family: Sail;
     }
+    .cookie{
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      z-index: 100;
+      overflow: hidden;
+      margin: 0;
+      left: 0;
+      padding-left: 40px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      padding-right: 40px;
+      background-color: white;
+      border-color: black;
+      opacity: 80%;
+    }
+    .cookielink{
+      color: #646464;
+    }
+    .cookielink:hover{
+      text-decoration: none;
+      color: black;
+    }
+    .cookiebutton{
+      border-color: white;
+      background-color: white;
+    }
 </style>
 
 <body>
@@ -55,34 +82,17 @@ function topFunction() {
 <center><h4>You are home :)</h4></center>
 <center><img src="photos/Separators.png" class="sep"></center>
 
-<div class="left">
-  <div class="thing">
-    <a href="pastelblocks.html">
-      <img src="photos/Pastel Blocks Logo.png" alt="Pastel Blocks Logo" class="img">
-    </a>
-    <br>
-    <a href="pastelblocks.html" class="linktitle">CSS Zen Garden: Pastel Blocks</a>
-  </div>
+<center><p class="subtitle">Currently, there is nothing on our home page. Click the links below to view my projects.</p></center>
 
-<br><br><br>
-  <div class="thing">
-    <a href="menubars.html">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Solid_gray.png" alt="Menubar Ideas" class="img">
-    </a>
-    <br>
-    <a href="menubars.html" class="linktitle">Menubar Ideas</a>
-  </div>  
-</div>
+<center><a href="yellowrocks.html" class="link">CSS Zen Garden: Yellow Rocks</a></center>
+<br>
+<center><a href="pastelblocks.html" class="link">CSS Zen Garden: Pastel Blocks</a></center>
+<br>
+<center><a href="menubars.html" class="link">Menubar Ideas</a></center>
 
-<div class="right">
-  <div class="thing">
-    <a href="yellowrocks.html">
-      <img src="photos/logowithbackground.png" alt="Yellow Rocks Logo" class="img">
-    </a>
-    <br>
-    <a href="yellowrocks.html" class="linktitle">CSS Zen Garden: Yellow Rocks</a>
-  </div>
-</div>
+<p class="cookie" id="cookieclose">We do not use cookies on this website. You cannot read our cookie policy <a href="https://www.example.com/" class="cookielink" target="_blank">here.</a>
+<button onclick="document.getElementById('cookieclose').style.display='none'">❌</button>
+</p>
 
 </body>
 </html>

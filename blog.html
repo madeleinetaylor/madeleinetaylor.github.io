@@ -101,6 +101,9 @@ h3{
     text-decoration: none;
     padding: 5px 5px;
     color: black;
+    font-family: Poppins;
+    border: none;
+    font-size: 15px;
 }
 .sidebutton:hover{
     background-color:#b5e1da;
@@ -276,11 +279,17 @@ function readLess(a){
 }
 </script>
 
+<script>
+    function subyay(){
+        console.log("itworked");
+        document.getElementById('sub').innerHTML="Yay, thanks for subscribing!";document.getElementById('yay').innerHTML="Subscribed";
+    }
+</script>
 
 <div class="sidebar">
 <h4 class="sidebarheader">Follow my blog</h3>
-<p>Receive an email whenever I post something new.</p>
-<a href="https://example.com" class="sidebutton" target="_blank">Subscribe</a>
+<p id="sub">Receive an email whenever I post something new.</p>
+<button id="yay" class="sidebutton" onclick="subyay();">Subscribe</button>
 
 <h4 class="sidebarheader">Contact me</h4>
 <p>Click <a href="https://example.com" class="nolink" target="_blank">here</a> to contact me, or email me at <a href="mailto:example@example.ex" class="nolink" target="_blank">example@example.ex</a>.</p>

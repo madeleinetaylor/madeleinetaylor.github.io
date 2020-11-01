@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="menubar.css">
+<title>Funny Buttons | Madeleine Taylor</title>
+<link rel="icon" href="photos/newgithublogo.png">
+</head>
+<!--Fonts-->
+
+<style>
+.button{
+    background-color: #a796e4;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+    font-family: Poppins;
+    border: none;
+    font-size: 15px;
+}
+.button:hover{
+    background-color:#b5e1da;
+}
+.todo{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-family: Poppins;
+  border: none;
+  font-size: 15px;
+}
+</style>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Scroll up">TOP</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  <div class="menu1">
+    <a href="index.html" class="menubar1">Home</a>
+    <a href="about.html" class="menubar1">About</a>
+    <a href="contact.html" class="menubar1">Contact</a>
+    <a href="https://whimsicalwatercolor.wordpress.com/" class="menubar1" target="_blank" title="Visit my blog, Whimsical Watercolor! This will open in a new tab ;)">Blog</a>
+  </div>
+
+<center><a href="index.html" class="title">Madeleine Taylor</a></center>
+<center><h4>Project: Funny Buttons</h4></center>
+<center><img src="photos/Separators.png" class="sep"></center>
+
+<script>
+    function subyay(){
+        console.log("itworked");
+        document.getElementById('sub').innerHTML="Yay, thanks for subscribing!";
+        document.getElementById('yay').style.display="none";
+        document.getElementById('aww').style.display="block";
+    }
+    function subaww(){
+        document.getElementById('sub').innerHTML="Receive an email whenever I post something new. Join 0 other subscribers.";
+        document.getElementById('yay').style.display="block";
+        document.getElementById('aww').style.display="none";
+    }
+</script>
+
+<h2>Follow my blog</h3>
+<p id="sub">Receive an email whenever I post something new. Join 0 other subscribers.</p>
+<button class="button" id="yay" onclick="subyay();">Subscribe</button>
+<button  class="button" id="aww" onclick="subaww();" style="display: none;">Unsubscribe</button>
+
+<br><br><br>
+
+<script>
+  function virus(){
+    document.getElementById('corona').innerHTML="Oops, now you have coronavirus.";
+  }
+  function virus2(){
+    document.getElementById('mega').innerHTML="Who even knows what mega virus is?";
+  }
+  function virus3(){
+    document.getElementById('marburg').innerHTML="Marburg virus causes bad fevers and organ failure."
+  }
+</script>
+
+<h2>Download free viruses</h2>
+<p>These buttons don't do anything, don't worry.</p>
+<button  class="button" id="corona" onclick="virus();">Coronavirus</button>
+<button  class="button" id="mega" onclick="virus2();">Mega Virus</button>
+<button  class="button" id="marburg" onclick="virus3();">Marburg Virus</button>
+
+<br><br><br>
+
+<script>
+  function todo(a){
+    document.getElementById(a).style.textDecoration="line-through"
+  }
+</script>
+
+<h2>Check off things in this to-do list</h2>
+<button class="todo" onclick="todo(1);" id="1">○ Make my bed.</button>
+<br>
+<button class="todo" onclick="todo(2);" id="2">○ Read a book.</button>
+<br>
+<button class="todo" onclick="todo(3);" id="3">○ Do school/job.</button>
+<br>
+<button class="todo" onclick="todo(4);" id="4">○ Take out the trash.</button>
+<br>
+<button class="todo" onclick="todo(5);" id="5">○ Reply to all my spam emails and give them access to my bank account.</button>
+
+<br><br><br>
+
+</body>
+</html>

@@ -225,7 +225,7 @@ function topFunction() {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <div id="contread2" class="hidden">
-    <p>In hac habitasse platea dictumst quisque sagittis purus. Et pharetra pharetra massa massa ultricies mi. Montes nascetur ridiculus mus mauris vitae ultricies. Bibendum at varius vel pharetra. Nec nam aliquam sem et. Ac turpis egestas sed tempus urna et pharetra. Tellus rutrum tellus pellentesque eu. At urna condimentum mattis pellentesque. Mattis vulputate enim nulla aliquet porttitor lacus. Ac odio tempor orci dapibus ultrices in. A diam sollicitudin tempor id eu nisl nunc. Sed augue lacus viverra vitae congue eu consequat ac. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Quis blandit turpis cursus in hac habitasse platea. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
+    <p>In hac habitasse platea dictumst quisque sagittis purus. Et pharetra pharetra massa massa ultricies mi. Montes nascetur ridiculus mus mauris vitae ultricies. Bibendum at varius vel pharetra. Nec nam aliquam sem et. Ac turpis egestas sed tempus urna et pharetra. Tellus rutrum tellus pellentesque eu. At urna condimentum mattis pellentesque. Mattis vulputate enim nulla aliquet <a href="https://example.com" target="_blank" class="link">porttitor lacus</a>. Ac odio tempor orci dapibus ultrices in. A diam sollicitudin tempor id eu nisl nunc. Sed augue lacus viverra vitae congue eu consequat ac. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Quis blandit turpis cursus in hac habitasse platea. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
 
     <p>Purus sit amet volutpat consequat mauris nunc. Lorem mollis aliquam ut porttitor leo a. Urna nec tincidunt praesent semper. Nulla aliquet enim tortor at. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Dictumst quisque sagittis purus sit amet volutpat consequat mauris. Eu facilisis sed odio morbi quis commodo odio. Mattis molestie a iaculis at erat. In metus vulputate eu scelerisque felis imperdiet. Urna duis convallis convallis tellus. Diam vel quam elementum pulvinar etiam non quam lacus. At consectetur lorem donec massa sapien faucibus. Ac ut consequat semper viverra nam libero.</p>
 
@@ -287,9 +287,24 @@ function readLess(a){
 </script>
 
 <div class="sidebar">
-<h4 class="sidebarheader">Follow my blog</h3>
-<p id="sub">Receive an email whenever I post something new.</p>
-<button id="yay" class="sidebutton" onclick="subyay();">Subscribe</button>
+    <script>
+        function subyay(){
+            console.log("itworked");
+            document.getElementById('sub').innerHTML="Yay, thanks for subscribing!";
+            document.getElementById('yay').style.display="none";
+            document.getElementById('aww').style.display="block";
+        }
+        function subaww(){
+            document.getElementById('sub').innerHTML="Receive an email whenever I post something new. Join 0 other subscribers.";
+            document.getElementById('yay').style.display="block";
+            document.getElementById('aww').style.display="none";
+        }
+    </script>
+    
+    <h4 class="sidebarheader">Follow my blog</h4>
+    <p id="sub">Receive an email whenever I post something new. Join 0 other subscribers.</p>
+    <button class="sidebutton" id="yay" onclick="subyay();">Subscribe</button>
+    <button  class="sidebutton" id="aww" onclick="subaww();" style="display: none;">Unsubscribe</button>
 
 <h4 class="sidebarheader">Contact me</h4>
 <p>Click <a href="https://example.com" class="nolink" target="_blank">here</a> to contact me, or email me at <a href="mailto:example@example.ex" class="nolink" target="_blank">example@example.ex</a>.</p>

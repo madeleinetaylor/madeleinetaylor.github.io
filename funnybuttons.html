@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css.css">
 <link rel="stylesheet" href="menubar.css">
-<title>Funny Buttons | Madeleine Taylor</title>
+<title>Fun Buttons | Madeleine Taylor</title>
 <link rel="icon" href="photos/newgithublogo.png">
 </head>
 <!--Fonts-->
@@ -28,6 +28,12 @@
   font-family: Poppins;
   border: none;
   font-size: 15px;
+}
+.imgbutton{
+  height: 50px;
+  border-radius: 50%;
+  opacity: 80%;
+  cursor: pointer;
 }
 </style>
 
@@ -65,7 +71,7 @@ function topFunction() {
   </div>
 
 <center><a href="index.html" class="title">Madeleine Taylor</a></center>
-<center><h4>Project: Funny Buttons</h4></center>
+<center><h4>Project: Fun Buttons</h4></center>
 <center><img src="photos/Separators.png" class="sep"></center>
 
 <script>
@@ -127,6 +133,38 @@ function topFunction() {
 <button class="todo" onclick="todo(5);" id="5">○ Reply to all my spam emails and give them access to my bank account.</button>
 
 <br><br><br>
+
+<script>
+  function manchef(){
+    document.getElementById('bigimg').src="photos/manchef.jpg";
+    document.getElementById('manchefo').style.opacity="1";
+    document.getElementById('smanchefo').style.opacity="0.8";
+    document.getElementById('ladychefo').style.opacity="0.8";
+  }
+  function smanchef(){
+    document.getElementById('bigimg').src="photos/secondmanchef.jpg";
+    document.getElementById('manchefo').style.opacity="0.8";
+    document.getElementById('smanchefo').style.opacity="1";
+    document.getElementById('ladychefo').style.opacity="0.8";
+  }
+  function ladychef(){
+    document.getElementById('bigimg').src="photos/ladychef.png";
+    document.getElementById('manchefo').style.opacity="0.8";
+    document.getElementById('smanchefo').style.opacity="0.8";
+    document.getElementById('ladychefo').style.opacity="1";
+  }
+</script>
+
+<h2>View images in a gallery instead of separately</h2>
+<img src="photos/manchef.jpg" id="bigimg" style="height: 400px;">
+<br>
+<img src="photos/manchef.jpg" class="imgbutton" onclick="manchef();" id="manchefo">
+<img src="photos/secondmanchef.jpg" class="imgbutton" onclick="smanchef();" id="smanchefo">
+<img src="photos/ladychef.png" class="imgbutton" onclick="ladychef();" id="ladychefo">
+
+<br><br><br>
+
+
 
 </body>
 </html>

@@ -15,13 +15,16 @@
 body{
     font-family: Poppins;
 }
+.purple{
+    
+}
 h1{
-    font-size: 100px;
-    margin-bottom: -30px;
-    margin-top: -3px;
+   font-size: 100px;
+   margin-top: 40px;
+   margin-bottom: -20px;
 }
 h3{
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 #myBtn{
     display: none;
@@ -152,11 +155,15 @@ h3{
     float: left;
 }
 .sidebar{
-    padding-left: 5px;
+    padding-right: 30px;
     width: 20%;
-    float: left;
-    position: sticky;
-    top: 0;
+    float: right;
+    position: fixed;
+    top: 30;
+    overflow: auto;
+    right: 0;
+    height: 600px;
+    background-color: white;
 }
 .sidebarheader{
     font-size: 30px;
@@ -166,6 +173,38 @@ h3{
 .padding{
     padding: 360px;
     display: none;
+}
+.img{
+    width: 700px;
+}
+.imgsub{
+    font-size: 15px;
+    color: gray;
+}
+.imglink{
+    font-size: 15px;
+    color: #a796e4;
+    position: relative;
+    text-decoration: none;
+}
+.imglink:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: #a796e4;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+  }
+.imglink:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.imglink:hover{
+    color: gray;
 }
 @media screen and (max-width: 800px) {
     .padding{
@@ -217,10 +256,38 @@ function topFunction() {
 }
 </script>
 
-<center><h1>A Wonderful Blog</h1></center>
-<center><h3>a one page blog layout</h3></center>
+<div class="purple">
+    <center><h1>A Wonderful Blog</h1></center>
+    <center><h3>a one page blog layout</h3></center>
+</div>
 
 <div class="main">
+    <a href="mythirdblogpost.html" class="linkheader">My Third Blog Post</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <div id="contread3" class="hidden">
+        <p>In hac habitasse platea dictumst quisque sagittis purus. Et pharetra pharetra massa massa ultricies mi. Montes nascetur ridiculus mus mauris vitae ultricies. Bibendum at varius vel pharetra. Nec nam aliquam sem et. Ac turpis egestas sed tempus urna et pharetra. Tellus rutrum tellus pellentesque eu. At urna condimentum mattis pellentesque. Mattis vulputate enim nulla aliquet <a href="https://example.com" target="_blank" class="link">porttitor lacus</a>. Ac odio tempor orci dapibus ultrices in. A diam sollicitudin tempor id eu nisl nunc. Sed augue lacus viverra vitae congue eu consequat ac. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Quis blandit turpis cursus in hac habitasse platea. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
+
+        <center><img src="https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80" class="img"></center>
+        <center><p class="imgsub">Image from <a href="https://unsplash.com/photos/-f0YLss50Bs" target="_blank" class="imglink">Unsplash</a>.</p></center>
+    
+        <p>Purus sit amet volutpat consequat mauris nunc. Lorem mollis aliquam ut porttitor leo a. Urna nec tincidunt praesent semper. Nulla aliquet enim tortor at. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Dictumst quisque sagittis purus sit amet volutpat consequat mauris. Eu facilisis sed odio morbi quis commodo odio. Mattis molestie a iaculis at erat. In metus vulputate eu scelerisque felis imperdiet. Urna duis convallis convallis tellus. Diam vel quam elementum pulvinar etiam non quam lacus. At consectetur lorem donec massa sapien faucibus. Ac ut consequat semper viverra nam libero.</p>
+    
+        <p>Sapien pellentesque habitant morbi tristique senectus et netus. Metus vulputate eu scelerisque felis imperdiet proin. Sit amet risus nullam eget felis eget nunc lobortis. Fusce ut placerat orci nulla pellentesque. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Sit amet commodo nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Auctor elit sed vulputate mi sit amet mauris commodo quis. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Ante in nibh mauris cursus mattis molestie.</p>
+    
+        <p>Ac orci phasellus egestas tellus. Tincidunt eget nullam non nisi est sit amet facilisis magna. Etiam tempor orci eu lobortis elementum. Ornare arcu dui vivamus arcu felis bibendum ut. Hac habitasse platea dictumst quisque sagittis purus. Est ante in nibh mauris cursus mattis. Curabitur gravida arcu ac tortor dignissim. Egestas tellus rutrum tellus pellentesque eu tincidunt. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Rutrum quisque non tellus orci ac auctor augue. Viverra mauris in aliquam sem fringilla. Adipiscing tristique risus nec feugiat in. Malesuada fames ac turpis egestas sed tempus. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl.</p>
+    
+        <button class="button" onclick="readLess(3);">Show less</button>
+    </div>
+    
+    <div id="closebutton3">
+        <button class="button"
+            onclick="readMore(3);"
+        >Continue reading</button>
+    </div>
+    
+    <br>
+
 <a href="mysecondblogpost.html" class="linkheader">My Second Blog Post</a>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -228,6 +295,9 @@ function topFunction() {
     <p>In hac habitasse platea dictumst quisque sagittis purus. Et pharetra pharetra massa massa ultricies mi. Montes nascetur ridiculus mus mauris vitae ultricies. Bibendum at varius vel pharetra. Nec nam aliquam sem et. Ac turpis egestas sed tempus urna et pharetra. Tellus rutrum tellus pellentesque eu. At urna condimentum mattis pellentesque. Mattis vulputate enim nulla aliquet <a href="https://example.com" target="_blank" class="link">porttitor lacus</a>. Ac odio tempor orci dapibus ultrices in. A diam sollicitudin tempor id eu nisl nunc. Sed augue lacus viverra vitae congue eu consequat ac. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Quis blandit turpis cursus in hac habitasse platea. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
 
     <p>Purus sit amet volutpat consequat mauris nunc. Lorem mollis aliquam ut porttitor leo a. Urna nec tincidunt praesent semper. Nulla aliquet enim tortor at. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Dictumst quisque sagittis purus sit amet volutpat consequat mauris. Eu facilisis sed odio morbi quis commodo odio. Mattis molestie a iaculis at erat. In metus vulputate eu scelerisque felis imperdiet. Urna duis convallis convallis tellus. Diam vel quam elementum pulvinar etiam non quam lacus. At consectetur lorem donec massa sapien faucibus. Ac ut consequat semper viverra nam libero.</p>
+
+    <center><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80" class="img"></center>
+    <center><p class="imgsub">Image from <a href="https://unsplash.com/photos/KMn4VEeEPR8" target="_blank" class="imglink">Unsplash</a>.</p></center>
 
     <p>Sapien pellentesque habitant morbi tristique senectus et netus. Metus vulputate eu scelerisque felis imperdiet proin. Sit amet risus nullam eget felis eget nunc lobortis. Fusce ut placerat orci nulla pellentesque. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Sit amet commodo nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Auctor elit sed vulputate mi sit amet mauris commodo quis. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Ante in nibh mauris cursus mattis molestie.</p>
 
@@ -253,6 +323,9 @@ function topFunction() {
     <p>Purus sit amet volutpat consequat mauris nunc. Lorem mollis aliquam ut porttitor leo a. Urna nec tincidunt praesent semper. Nulla aliquet enim tortor at. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Dictumst quisque sagittis purus sit amet volutpat consequat mauris. Eu facilisis sed odio morbi quis commodo odio. Mattis molestie a iaculis at erat. In metus vulputate eu scelerisque felis imperdiet. Urna duis convallis convallis tellus. Diam vel quam elementum pulvinar etiam non quam lacus. At consectetur lorem donec massa sapien faucibus. Ac ut consequat semper viverra nam libero.</p>
 
     <p>Sapien pellentesque habitant morbi tristique senectus et netus. Metus vulputate eu scelerisque felis imperdiet proin. Sit amet risus nullam eget felis eget nunc lobortis. Fusce ut placerat orci nulla pellentesque. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Sit amet commodo nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Auctor elit sed vulputate mi sit amet mauris commodo quis. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Ante in nibh mauris cursus mattis molestie.</p>
+
+    <center><img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80" class="img"></center>
+    <center><p class="imgsub">Image from <a href="https://unsplash.com/photos/IicyiaPYGGI" target="_blank" class="imglink">Unsplash</a>.</p></center>
 
     <p>Ac orci phasellus egestas tellus. Tincidunt eget nullam non nisi est sit amet facilisis magna. Etiam tempor orci eu lobortis elementum. Ornare arcu dui vivamus arcu felis bibendum ut. Hac habitasse platea dictumst quisque sagittis purus. Est ante in nibh mauris cursus mattis. Curabitur gravida arcu ac tortor dignissim. Egestas tellus rutrum tellus pellentesque eu tincidunt. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Rutrum quisque non tellus orci ac auctor augue. Viverra mauris in aliquam sem fringilla. Adipiscing tristique risus nec feugiat in. Malesuada fames ac turpis egestas sed tempus. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl.</p>
 

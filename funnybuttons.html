@@ -6,9 +6,22 @@
 <title>Fun Buttons | Madeleine Taylor</title>
 <link rel="icon" href="photos/newgithublogo.png">
 </head>
-<!--Fonts-->
-
 <style>
+.left{
+  width: 45%;
+  float: center;
+  text-align: left;
+}
+.right{
+  width: 45%;
+  float: center;
+  text-align: left;
+}
+  @media screen and (max-width: 800px) {
+    .left, .right{
+      width: 100%;
+    }
+}
 .button{
     background-color: #a796e4;
     text-decoration: none;
@@ -34,6 +47,31 @@
   border-radius: 50%;
   opacity: 80%;
   cursor: pointer;
+}
+.cart{
+  display: none;
+}
+.list{
+  cursor: pointer;
+}
+.list:hover{
+  font-weight: bold;
+}
+.circle{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #a796e4;
+  border-radius: 50%;
+}
+.message{
+  text-decoration: none;
+  color: white;
+}
+.messagecolor{
+  display: none;
+  background-color: rgb(168, 168, 168);
+  padding: 2px 1px;
 }
 </style>
 
@@ -88,6 +126,7 @@ function topFunction() {
     }
 </script>
 
+<div class="right">
 <h2>Follow my blog</h3>
 <p id="sub">Receive an email whenever I post something new. Join 0 other subscribers.</p>
 <button class="button" id="yay" onclick="subyay();">Subscribe</button>
@@ -116,8 +155,8 @@ function topFunction() {
 <br><br><br>
 
 <script>
-  function todo(a){
-    document.getElementById(a).style.textDecoration="line-through"
+  function todo(billyBobby){
+    document.getElementById(billyBobby).style.textDecoration="line-through";
   }
 </script>
 
@@ -133,6 +172,12 @@ function topFunction() {
 <button class="todo" onclick="todo(5);" id="5">○ Reply to all my spam emails and give them access to my bank account.</button>
 
 <br><br><br>
+
+<h2></h2>
+
+</div>
+
+<div class="right">
 
 <script>
   function manchef(){
@@ -164,7 +209,57 @@ function topFunction() {
 
 <br><br><br>
 
+<script>
+  function cc(cookie){
+    document.getElementById(cookie).style.display="block";
+  }
+</script>
 
+<script>
+  function ccmessage(a){
+    document.getElementById(a).style.display="block";
+  }
+  function ccnone(a){
+    document.getElementById(a).style.display="none"
+  }
+</script>
+
+<h2>Add cookies to your cart by clicking on them below</h2>
+<p onclick="cc(6);" class="list">Brown Butter Chocolate Chip Cookie</p>
+<p onclick="cc(7);" class="list">Chewy Snickerdoodle</p>
+<p onclick="cc(8);" class="list">Signature Shortbread</p>
+<p onclick="cc(9);" class="list">Chocolate Oatmeal Raisin Cookie</p>
+
+<br>
+
+<p><strong>Your Cart</strong></p>
+<p class="cart" id="6">Brown Butter Chocolate Chip Cookie <a href="javascript:void(0)" onclick="ccmessage(10);" style="text-decoration: none; color: black;">✖</a></p>
+<p class="messagecolor" id="10">Are you sure you want to remove this?
+  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
+  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
+</p>
+
+<p class="cart" id="7">Chewy Snickerdoodle <a href="javascript:void(0)" onclick="ccmessage(11);" style="text-decoration: none; color: black;">✖</a></p>
+<p class="messagecolor" id="11">Are you sure you want to remove this?
+  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
+  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
+</p>
+
+<p class="cart" id="8">Signature Shortbread <a href="javascript:void(0)" onclick="ccmessage(12);" style="text-decoration: none; color: black;">✖</a></p>
+<p class="messagecolor" id="12">Are you sure you want to remove this?
+  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
+  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
+</p>
+
+<p class="cart" id="9" >Chocolate Oatmeal Raisin Cookie <a href="javascript:void(0)" onclick="ccmessage(13);" style="text-decoration: none; color: black;">✖</a></p>
+<p class="messagecolor" id="13">Are you sure you want to remove this?
+  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
+  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
+</p>
+
+<br><br><br>
+
+</div>
 
 </body>
 </html>

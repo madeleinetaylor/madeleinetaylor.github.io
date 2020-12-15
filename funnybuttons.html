@@ -149,7 +149,9 @@ function topFunction() {
 <h2>Download free viruses</h2>
 <p>These buttons don't do anything, don't worry.</p>
 <button  class="button" id="corona" onclick="virus();">Coronavirus</button>
+<br><br>
 <button  class="button" id="mega" onclick="virus2();">Mega Virus</button>
+<br><br>
 <button  class="button" id="marburg" onclick="virus3();">Marburg Virus</button>
 
 <br><br><br>
@@ -208,15 +210,19 @@ function topFunction() {
 <script>
   function cc(){
     document.getElementById('cc').style.display="block";
+    document.getElementById('checkOut').style.display="block";
   }
   function sd(){
     document.getElementById('sd').style.display="block";
+    document.getElementById('checkOut').style.display="block";
   }
   function sb(){
     document.getElementById('sb').style.display="block";
+    document.getElementById('checkOut').style.display="block";
   }
   function or(){
     document.getElementById('or').style.display="block";
+    document.getElementById('checkOut').style.display="block";
   }
 </script>
 
@@ -232,6 +238,10 @@ function topFunction() {
   }
   function ormessage(){
     document.getElementById('or').style.display="none";
+  }
+  //Makes 'checkOut' button disappear
+  function checkOutDisappear(){
+    document.getElementById('checkOut').style.display="none";
   }
 </script>
 
@@ -251,6 +261,8 @@ function topFunction() {
 <p class="cart" id="sb">Signature Shortbread <a href="javascript:void(0)" onclick="sbmessage();" style="text-decoration: none; color: black;">✖</a></p>
 
 <p class="cart" id="or" >Chocolate Oatmeal Raisin Cookie <a href="javascript:void(0)" onclick="ormessage();" style="text-decoration: none; color: black;">✖</a></p>
+
+<button class="button" onclick="ccmessage(); sdmessage(); sbmessage(); ormessage(); checkOutDisappear();" id="checkOut" style="display:none;">Check out</button>
 
 <br><br><br>
 

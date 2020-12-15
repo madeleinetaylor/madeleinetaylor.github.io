@@ -76,6 +76,9 @@ h2{
   background-color: rgb(168, 168, 168);
   padding: 2px 1px;
 }
+sub{
+  font-family: 'Courier New', Courier, monospace;
+}
 </style>
 
 <body>
@@ -174,7 +177,21 @@ function topFunction() {
 
 <br><br><br>
 
-<h2></h2>
+<script>
+  function reset(){
+    document.getElementById('madlib').innerHTML="_______ <sub>BOY NAME</sub> jumped into the snow without _________ <sub>ARTICLE OF CLOTHING</sub> on. His mother was inside, making ________ <sub>FOOD</sub>, but he wanted to stay outside in the cold. Suddenly, a large __________ <sub>LARGE ITEM</sub> was hurled after ______ <sub>SAME BOY NAME</sub>. He fell over under the huge weight of the ________ <sub>SAME LARGE ITEM</sub>."
+  }
+  function fillup(){
+    document.getElementById('madlib').innerHTML="Terry <sub>BOY NAME</sub> jumped into the snow without boots <sub>ARTICLE OF CLOTHING</sub> on. His mother was inside, making cookies <sub>FOOD</sub>, but he wanted to stay outside in the cold. Suddenly, a large snowball <sub>LARGE ITEM</sub> was hurled after Terry <sub>SAME BOY NAME</sub>. He fell over under the huge weight of the snowball <sub>SAME LARGE ITEM</sub>."
+  }
+</script>
+
+<h2>Fill up this Mad Lib</h2>
+<p contenteditable="true" id="madlib">_______ <sub>BOY NAME</sub> jumped into the snow without _________ <sub>ARTICLE OF CLOTHING</sub> on. His mother was inside, making ________ <sub>FOOD</sub>, but he wanted to stay outside in the cold. Suddenly, a large __________ <sub>LARGE ITEM</sub> was hurled after ______ <sub>SAME BOY NAME</sub>. He fell over under the huge weight of the ________ <sub>SAME LARGE ITEM</sub>.</p>
+<p>The End (yep that was a pretty bad story)</p>
+<button class="button" onclick="reset();">Reset</button> <button class="button" onclick="fillup();">Fill up</button>
+
+<br><br><br>
 
 </div>
 

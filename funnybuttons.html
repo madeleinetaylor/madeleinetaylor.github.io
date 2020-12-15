@@ -156,20 +156,16 @@ function topFunction() {
 
 <script>
   function todo(billyBobby){
-    document.getElementById(billyBobby).style.textDecoration="line-through";
+    document.getElementById(billyBobby).innerHTML="✓";
   }
 </script>
 
-<h2>Check off things in this to-do list</h2>
-<button class="todo" onclick="todo(1);" id="1">○ Make my bed.</button>
-<br>
-<button class="todo" onclick="todo(2);" id="2">○ Read a book.</button>
-<br>
-<button class="todo" onclick="todo(3);" id="3">○ Do school/job.</button>
-<br>
-<button class="todo" onclick="todo(4);" id="4">○ Take out the trash.</button>
-<br>
-<button class="todo" onclick="todo(5);" id="5">○ Reply to all my spam emails and give them access to my bank account.</button>
+<h2>Set and check off things in this to do list</h2>
+<p contenteditable="true"> <button class="todo" onclick="todo(1);" id="1" contenteditable="false">○</button>Your first task</p>
+<p contenteditable="true"> <button class="todo" onclick="todo(2);" id="2" contenteditable="false">○</button>Your second task</p>
+<p contenteditable="true"> <button class="todo" onclick="todo(3);" id="3" contenteditable="false">○</button>Your third task</p>
+<p contenteditable="true"> <button class="todo" onclick="todo(4);" id="4" contenteditable="false">○</button>Your fourth task</p>
+<p contenteditable="true"> <button class="todo" onclick="todo(5);" id="5" contenteditable="false">○</button>Your fifth task</p>
 
 <br><br><br>
 
@@ -210,52 +206,51 @@ function topFunction() {
 <br><br><br>
 
 <script>
-  function cc(cookie){
-    document.getElementById(cookie).style.display="block";
+  function cc(){
+    document.getElementById('cc').style.display="block";
+  }
+  function sd(){
+    document.getElementById('sd').style.display="block";
+  }
+  function sb(){
+    document.getElementById('sb').style.display="block";
+  }
+  function or(){
+    document.getElementById('or').style.display="block";
   }
 </script>
 
 <script>
-  function ccmessage(a){
-    document.getElementById(a).style.display="block";
+  function ccmessage(){
+    document.getElementById('cc').style.display="none";
   }
-  function ccnone(a){
-    document.getElementById(a).style.display="none"
+  function sdmessage(){
+    document.getElementById('sd').style.display="none";
+  }
+  function sbmessage(){
+    document.getElementById('sb').style.display="none";
+  }
+  function ormessage(){
+    document.getElementById('or').style.display="none";
   }
 </script>
 
 <h2>Add cookies to your cart by clicking on them below</h2>
-<p onclick="cc(6);" class="list">Brown Butter Chocolate Chip Cookie</p>
-<p onclick="cc(7);" class="list">Chewy Snickerdoodle</p>
-<p onclick="cc(8);" class="list">Signature Shortbread</p>
-<p onclick="cc(9);" class="list">Chocolate Oatmeal Raisin Cookie</p>
+<p onclick="cc();" class="list">Brown Butter Chocolate Chip Cookie</p>
+<p onclick="sd();" class="list">Chewy Snickerdoodle</p>
+<p onclick="sb();" class="list">Signature Shortbread</p>
+<p onclick="or();" class="list">Chocolate Oatmeal Raisin Cookie</p>
 
 <br>
 
 <p><strong>Your Cart</strong></p>
-<p class="cart" id="6">Brown Butter Chocolate Chip Cookie <a href="javascript:void(0)" onclick="ccmessage(10);" style="text-decoration: none; color: black;">✖</a></p>
-<p class="messagecolor" id="10">Are you sure you want to remove this?
-  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
-  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
-</p>
+  <p class="cart" id="cc">Brown Butter Chocolate Chip Cookie <a href="javascript:void(0)" onclick="ccmessage();" style="text-decoration: none; color: black;">✖</a></p>
 
-<p class="cart" id="7">Chewy Snickerdoodle <a href="javascript:void(0)" onclick="ccmessage(11);" style="text-decoration: none; color: black;">✖</a></p>
-<p class="messagecolor" id="11">Are you sure you want to remove this?
-  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
-  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
-</p>
+<p class="cart" id="sd">Chewy Snickerdoodle <a href="javascript:void(0)" onclick="sdmessage();" style="text-decoration: none; color: black;">✖</a></p>
 
-<p class="cart" id="8">Signature Shortbread <a href="javascript:void(0)" onclick="ccmessage(12);" style="text-decoration: none; color: black;">✖</a></p>
-<p class="messagecolor" id="12">Are you sure you want to remove this?
-  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
-  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
-</p>
+<p class="cart" id="sb">Signature Shortbread <a href="javascript:void(0)" onclick="sbmessage();" style="text-decoration: none; color: black;">✖</a></p>
 
-<p class="cart" id="9" >Chocolate Oatmeal Raisin Cookie <a href="javascript:void(0)" onclick="ccmessage(13);" style="text-decoration: none; color: black;">✖</a></p>
-<p class="messagecolor" id="13">Are you sure you want to remove this?
-  <a href="javascript:void(0)" class="message" onclick="ccnone();">Yes</a>
-  <a href="javascript:void(0)" class="message" onclick="messagenone();">No</a>
-</p>
+<p class="cart" id="or" >Chocolate Oatmeal Raisin Cookie <a href="javascript:void(0)" onclick="ormessage();" style="text-decoration: none; color: black;">✖</a></p>
 
 <br><br><br>
 

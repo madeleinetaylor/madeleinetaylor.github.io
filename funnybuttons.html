@@ -81,18 +81,44 @@ h2{
   font-weight: bold;
   color: rgb(168, 168, 168);
 }
-.question{
-  background-color: #a796e4;
+#question{
+  background-color: white;
   text-decoration: none;
-  padding: 5px 5px;
+  padding: 5px 10px;
   color: black;
   font-family: Poppins;
   border: none;
   font-size: 15px;
-  padding-right: 10px;
 }
-.question:hover{
-  background-color:#b5e1da;
+.form{
+  width: 500px;
+  height: 20px;
+  border-radius: 0%;
+  border-width: 1px;
+  font-family: Poppins;
+  font-size: 15px;
+  border-color: black;
+  padding: 5px 5px;
+}
+.form2{
+  width: 300px;
+  height: 20px;
+  border-radius: 0%;
+  border-width: 1px;
+  font-family: Poppins;
+  font-size: 15px;
+  border-color: black;
+  padding: 5px 5px;
+}
+.form3{
+  width: 60px;
+  height: 30px;
+  border-radius: 0%;
+  border-width: 1px;
+  font-family: Poppins;
+  font-size: 15px;
+  border-color: black;
+  padding: 5px 5px;
 }
 </style>
 
@@ -193,16 +219,20 @@ function topFunction() {
 <br><br><br>
 
 <script>
- 
+  
 </script>
 
-<h2>Click on the right button to win</h2>
-<p>You can only trust what #1 says. Buttons can only lie or tell the truth.</p>
-<button class="question">#1 <strong>Trust #6</strong></button><button class="question">#2 <strong>Do not trust #9, instead trust #4</strong></button><button class="question">#3 <strong>Click on #5</strong></button>
-<br><br>
-<button class="question">#4 <strong>Trust #5</strong></button><button class="question">#5 <strong>Click on #8 if #9 is lying</strong></button><button class="question">#6 <strong>Do not click me, trust #2</strong></button>
-<br><br>
-<button class="question">#7 <strong>Click me, not #2</strong></button><button class="question">#8 <strong>Do not click on me, instead click #1</strong></button><button class="question">#9 <strong> Click on #7, and trust #3</strong></button>
+<h2>Fill up this form</h2>
+<p>None of the information you submit in this form goes to anyone</p>
+
+<form>
+  <input type="text" class="form" placeholder="Your weirdest nickname that any of your friends created"><br><br>
+  <input type="text" class="form" placeholder="Your favorite cookie that doesn't include chocolate"><br><br>
+  <input type="text" class="form" placeholder="Your least used app that is still installed on your computer"><br><br>
+  <input type="text" class="form" placeholder="Your favorite color that someone else you know doesn't like"><br>
+  <br>
+  <input type="submit" value="Submit" class="button">
+</form> 
 
 <br><br><br>
 
@@ -272,8 +302,8 @@ function topFunction() {
   function ormessage(){
     document.getElementById('or').style.display="none";
   }
-  //Makes 'checkOut' button disappear
-  function checkOutDisappear(){
+  function checkout(){
+    document.getElementById('orderingform').style.display="block";
     document.getElementById('checkOut').style.display="none";
   }
 </script>
@@ -295,7 +325,67 @@ function topFunction() {
 
 <p class="cart" id="or" >Chocolate Oatmeal Raisin Cookie <a href="javascript:void(0)" onclick="ormessage();" style="text-decoration: none; color: black;">✖</a></p>
 
-<button class="button" onclick="ccmessage(); sdmessage(); sbmessage(); ormessage(); checkOutDisappear();" id="checkOut" style="display:none;">Check out</button>
+<button class="button" onclick="checkout();" id="checkOut" style="display:none;">Check out</button>
+
+<form style="display: none;" id="orderingform">
+  <input type="text" class="form2" placeholder="First Name">
+  <input type="text" class="form2" placeholder="Last Name">
+  <input type="email" class="form2" placeholder="Email Adress">
+  <input type="text" class="form2" placeholder="Address">
+  <input type="text" class="form2" placeholder="City">
+  <select class="form3">
+    <option>AL</option>
+    <option>AK</option>
+    <option>AZ</option>
+    <option>AR</option>
+    <option>CA</option>
+    <option>CO</option>
+    <option>CT</option>
+    <option>DE</option>
+    <option>FL</option>
+    <option>GA</option>
+    <option>ID</option>
+    <option>IL</option>
+    <option>IN</option>
+    <option>IA</option>
+    <option>KS</option>
+    <option>KY</option>
+    <option>LA</option>
+    <option>ME</option>
+    <option>MD</option>
+    <option>MA</option>
+    <option>MI</option>
+    <option>MN</option>
+    <option>MS</option>
+    <option>MO</option>
+    <option>MT</option>
+    <option>NE</option>
+    <option>NV</option>
+    <option>NH</option>
+    <option>NJ</option>
+    <option>NM</option>
+    <option>NY</option>
+    <option>NC</option>
+    <option>ND</option>
+    <option>OH</option>
+    <option>OK</option>
+    <option>OR</option>
+    <option>PA</option>
+    <option>SD</option>
+    <option>TN</option>
+    <option>TX</option>
+    <option>UT</option>
+    <option>VT</option>
+    <option>VA</option>
+    <option>WA</option>
+    <option>WV</option>
+    <option>WI</option>
+    <option>WY</option>
+  </select>
+  <input type="text" class="form2" placeholder="Zip Code">
+  <br><br>
+  <input type="submit" value="Place Your Order!" class="button">
+</form> 
 
 <br><br><br>
 

@@ -47,6 +47,9 @@ h2{
 }
 .imgbutton{
   height: 50px;
+  width: 50px;
+  margin: 0;
+  overflow: hidden;
   border-radius: 50%;
   opacity: 80%;
   cursor: pointer;
@@ -167,6 +170,7 @@ function topFunction() {
 
 <center><a href="index.html" class="title">Madeleine Taylor</a></center>
 <center><h4>Project: Fun Buttons</h4></center>
+<center><p>Criteria: Must include a button or a clickable item and JS</p></center>
 <center><img src="photos/Separators.png" class="sep"></center>
 
 <script>
@@ -229,20 +233,33 @@ function topFunction() {
 <br><br><br>
 
 <script>
-  
+  function myanswers(){
+    document.getElementById('nn').value="Ada";
+    document.getElementById('fc').value="Snickerdoodle";
+    document.getElementById('la').value="ClickUp";
+    document.getElementById('cc').value="Green Gray";
+  }
+  function resetform(){
+    document.getElementById('nn').value="";
+    document.getElementById('fc').value="";
+    document.getElementById('la').value="";
+    document.getElementById('cc').value="";
+  }
 </script>
 
 <h2>Fill up this form</h2>
 <p>None of the information you submit in this form goes to anyone</p>
 
 <form>
-  <input type="text" class="form" placeholder="Your weirdest nickname that any of your friends created"><br><br>
-  <input type="text" class="form" placeholder="Your favorite cookie that doesn't include chocolate"><br><br>
-  <input type="text" class="form" placeholder="Your least used app that is still installed on your computer"><br><br>
-  <input type="text" class="form" placeholder="Your favorite color that someone else you know doesn't like"><br>
+  <input type="text" class="form" placeholder="Your weirdest nickname that any of your friends created" id="nn"><br><br>
+  <input type="text" class="form" placeholder="Your favorite cookie that doesn't include chocolate" id="fc"><br><br>
+  <input type="text" class="form" placeholder="Your least used app that is still installed on your computer" id="la"><br><br>
+  <input type="text" class="form" placeholder="Your favorite color that someone else you know doesn't like" id="cc"><br>
   <br>
   <input type="submit" value="Submit" class="button">
-</form> 
+</form>
+<br>
+<button class="button" onclick="myanswers();">Show my answers</button> <button class="button" onclick="resetform();">Reset</button>
 
 <br><br><br>
 
@@ -252,19 +269,19 @@ function topFunction() {
 
 <script>
   function manchef(){
-    document.getElementById('bigimg').src="photos/manchef.jpg";
+    document.getElementById('bigimg').src="photos/soup.jpg";
     document.getElementById('manchefo').style.opacity="1";
     document.getElementById('smanchefo').style.opacity="0.8";
     document.getElementById('ladychefo').style.opacity="0.8";
   }
   function smanchef(){
-    document.getElementById('bigimg').src="photos/secondmanchef.jpg";
+    document.getElementById('bigimg').src="photos/soup2.jpg";
     document.getElementById('manchefo').style.opacity="0.8";
     document.getElementById('smanchefo').style.opacity="1";
     document.getElementById('ladychefo').style.opacity="0.8";
   }
   function ladychef(){
-    document.getElementById('bigimg').src="photos/ladychef.png";
+    document.getElementById('bigimg').src="photos/soup3.jpg";
     document.getElementById('manchefo').style.opacity="0.8";
     document.getElementById('smanchefo').style.opacity="0.8";
     document.getElementById('ladychefo').style.opacity="1";
@@ -272,11 +289,11 @@ function topFunction() {
 </script>
 
 <h2>View images in a gallery instead of separately</h2>
-<img src="photos/manchef.jpg" id="bigimg" style="height: 400px;">
+<img src="photos/soup.jpg" id="bigimg" style="height: 400px;">
 <br>
-<img src="photos/manchef.jpg" class="imgbutton" onclick="manchef();" id="manchefo">
-<img src="photos/secondmanchef.jpg" class="imgbutton" onclick="smanchef();" id="smanchefo">
-<img src="photos/ladychef.png" class="imgbutton" onclick="ladychef();" id="ladychefo">
+<img src="photos/soup.jpg" class="imgbutton" onclick="manchef();" id="manchefo">
+<img src="photos/soup2.jpg" class="imgbutton" onclick="smanchef();" id="smanchefo">
+<img src="photos/soup3.jpg" class="imgbutton" onclick="ladychef();" id="ladychefo">
 
 <br><br><br>
 
@@ -406,6 +423,12 @@ function topFunction() {
     document.getElementById('divide').value="3";
     document.getElementById('subtract').value="11";
   }
+  function resetmath(){
+    document.getElementById('add').value="";
+    document.getElementById('multiply').value="";
+    document.getElementById('divide').value="";
+    document.getElementById('subtract').value="";
+  }
 </script>
 
 <h2>Solve the math equations</h2>
@@ -419,7 +442,7 @@ function topFunction() {
   <label>24 - 13 = </label><input type="text" class="form4" id="subtract">
 </form>
 <br>
-<button class="button" onclick="answer();">Show answers</button>
+<button class="button" onclick="answer();">Show answers</button> <button class="button" onclick="resetmath();">Reset</button>
 
 <br><br><br>
 

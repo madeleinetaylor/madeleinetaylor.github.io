@@ -196,19 +196,24 @@ function topFunction() {
 <br><br><br>
 
 <script>
+  var virussound = new Audio('photos/virus.mp3');
   function virus(){
     document.getElementById('corona').innerHTML="Oops, now you have coronavirus.";
+    virussound.play();
   }
   function virus2(){
     document.getElementById('mega').innerHTML="Who even knows what mega virus is?";
+    virussound.play();
   }
   function virus3(){
-    document.getElementById('marburg').innerHTML="Marburg virus causes bad fevers and organ failure."
+    document.getElementById('marburg').innerHTML="Marburg virus causes bad fevers and organ failure.";
+    virussound.play();
   }
 </script>
 
 <h2>Download free viruses</h2>
 <p>These buttons don't do anything, don't worry.</p>
+<p>{sound on}</p>
 <button  class="button" id="corona" onclick="virus();">Coronavirus</button>
 <br><br>
 <button  class="button" id="mega" onclick="virus2();">Mega Virus</button>
@@ -268,27 +273,32 @@ function topFunction() {
 <div class="right">
 
 <script>
+  var dingding = new Audio('photos/ding.mp3');
   function manchef(){
     document.getElementById('bigimg').src="photos/soup.jpg";
     document.getElementById('manchefo').style.opacity="1";
     document.getElementById('smanchefo').style.opacity="0.8";
     document.getElementById('ladychefo').style.opacity="0.8";
+    dingding.play();
   }
   function smanchef(){
     document.getElementById('bigimg').src="photos/soup2.jpg";
     document.getElementById('manchefo').style.opacity="0.8";
     document.getElementById('smanchefo').style.opacity="1";
     document.getElementById('ladychefo').style.opacity="0.8";
+    dingding.play();
   }
   function ladychef(){
     document.getElementById('bigimg').src="photos/soup3.jpg";
     document.getElementById('manchefo').style.opacity="0.8";
     document.getElementById('smanchefo').style.opacity="0.8";
     document.getElementById('ladychefo').style.opacity="1";
+    dingding.play();
   }
 </script>
 
 <h2>View images in a gallery instead of separately</h2>
+<p>{sound on}</p>
 <img src="photos/soup.jpg" id="bigimg" style="height: 400px;">
 <br>
 <img src="photos/soup.jpg" class="imgbutton" onclick="manchef();" id="manchefo">

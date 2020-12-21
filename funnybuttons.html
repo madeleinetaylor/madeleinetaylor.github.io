@@ -120,6 +120,16 @@ h2{
   border-color: black;
   padding: 5px 5px;
 }
+.form4{
+  width: 20px;
+  height: 20px;
+  border-radius: 0%;
+  border-width: 1px;
+  font-family: Poppins;
+  font-size: 15px;
+  border-color: black;
+  padding: 5px 5px;
+}
 </style>
 
 <body>
@@ -386,6 +396,30 @@ function topFunction() {
   <br><br>
   <input type="submit" value="Place Your Order!" class="button">
 </form> 
+
+<br><br><br>
+
+<script>
+  function answer(){
+    document.getElementById('add').value="9";
+    document.getElementById('multiply').value="12";
+    document.getElementById('divide').value="3";
+    document.getElementById('subtract').value="11";
+  }
+</script>
+
+<h2>Solve the math equations</h2>
+<form>
+  <label>1 + 8 = </label><input type="text" class="form4" id="add">
+   <br><br>
+  <label>4 • 3 = </label><input type="text" class="form4" id="multiply">
+    <br><br>
+  <label>18 ÷ 6 = </label><input type="text" class="form4" id="divide">
+    <br><br>
+  <label>24 - 13 = </label><input type="text" class="form4" id="subtract">
+</form>
+<br>
+<button class="button" onclick="answer();">Show answers</button>
 
 <br><br><br>
 

@@ -50,9 +50,10 @@ h2{
   width: 50px;
   margin: 0;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 0%;
   opacity: 80%;
   cursor: pointer;
+  object-fit: cover;
 }
 .cart{
   display: none;
@@ -346,6 +347,7 @@ function topFunction() {
 </script>
 
 <h2>Add cookies to your cart by clicking on them below</h2>
+<p><i>This is currently broken.</i></p>
 <p onclick="cc();" class="list">Brown Butter Chocolate Chip Cookie</p>
 <p onclick="sd();" class="list">Chewy Snickerdoodle</p>
 <p onclick="sb();" class="list">Signature Shortbread</p>
@@ -433,6 +435,15 @@ function topFunction() {
     document.getElementById('divide').value="3";
     document.getElementById('subtract').value="11";
   }
+  
+  var addanswer = document.getElementById('add');
+    if (value="9") {
+      document.getElementById('check').style.display="block";
+    }
+    else {
+      document.getElementById('xmark').style.display="block";
+    }
+  
   function resetmath(){
     document.getElementById('add').value="";
     document.getElementById('multiply').value="";

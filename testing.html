@@ -1,90 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Madeleine Taylor</title>
+<title>Kelly Type Co.</title>
 <link rel="icon" href="photos/newgithublogo.png">
 </head>
 <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
     body{
-        font-family: Lato;
-    }
-    .title{
-        font-family: Epilogue;
-        font-size: 150px;
-        background-image: url(photos/dough.jpg);
-        padding-top: 250px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 250px;
-        color: white;
-        background-repeat: no-repeat;
-        background-position: center; 
-        border-radius: 10px;
+      padding:0;
+      margin:0;
+      font-family: Epilogue;
+      font-size: 30px;
     }
     #myBtn{
       display: none;
       position: fixed;
       bottom: 20px;
-      right: 30px;
+      left: 30px;
       z-index: 99;
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: #28272c;
+      background-color: #a9294f;
       color: white;
       cursor: pointer;
-      padding: 15px;
-      border-radius: 50px;
       font-family: Epilogue;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      opacity: 80%;
     }
-    .subtitle{
+    .header{
       font-family: Epilogue;
-        font-size: 50px;
+      font-size: 50px;
+      text-align: center;
+      position: fixed;
+      right: 50px;
+      top: 0px;
     }
-    .left{
-      float: left;
-      width: 30%;
-      padding-left: 50px;
+    .headerlink{
+      color: black;
+      text-decoration: none;
+      z-index: 10;
     }
-    .middle{
-      float: left;
-      width: 30%;
+    .top{
+      background-color: #a9294f;
+      padding-top: 5px;
+      padding-bottom: 3px;
     }
-    .right{
-      float: left;
-      width: 30%;
+    .epilogue{
+      font-family: Epilogue;
+      font-size: 190px;
+      color: white;
+      text-decoration: none;
     }
-    .paddingonthebottom{
-      padding-bottom: 250px;
+    .fjalla{
+      font-family: Fjalla One;
+      font-size: 210px;
+      color: white;
+      text-decoration: none;
     }
-    .sep{
-      height: 40px;
+    .abril{
+      font-family: Abril Fatface;
+      font-size: 260px;
+      color: white;
+      text-decoration: none;
     }
-    .portrait{
-      width: 150px;
-      border-radius: 50%;
+    .hammer{
+      font-family: Hammersmith One;
+      font-size: 180px;
+      color: white;
+      text-decoration: none;
     }
-    @media screen and (max-width: 700px) {
-    .left, .middle, .right{
-      width: 100%;
-      padding: 0;
+    .notice{
+      text-align: center;
     }
-}
-@media screen and (max-width: 800px) {
-    .title{
-      font-size: 70px;
+    .largetext{
+      font-family: Epilogue;
+      font-size: 80px;
+    }
+    .link{
+      text-decoration: none;
+      color: #a9294f;
+    }
+    .tryit{
+      background-color: #e03468;
+      text-align: center;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .etype{
+      font-family: Epilogue;
+      font-size: 30px;
+    }
+    .htype{
+      font-family: Hammersmith One;
+      font-size: 30px;
+    }
+    .atype{
+      font-family: Abril Fatface;
+      font-size: 30px;
+    }
+    .ftype{
+      font-family: Fjalla One;
+      font-size: 30px;
+    }
+    .testheader{
+      font-family: Epilogue;
+      margin-top: 15px;
+      margin-bottom: -5px;
+      font-size: 80px;
+    }
+    .mediumtext{
+      font-family: Epilogue;
+      font-size: 30px;
+    }
+    .form{
+      font-family: Epilogue;
+      font-size: 20px;
+      padding: 8px 8px;
+      border: none;
+      color: white;
+      background-color: #e03468;
+    }
+    ::placeholder {
+      color: white;
+      opacity: 1;
+    }
+    .formbutton{
+      font-family: Epilogue;
+      font-size: 20px;
+      padding: 8px 8px;
+      border: none;
+      background-color:  #a9294f;
+      color: white;
+      cursor: pointer;
+    }
+    .menulink{
+      color: black;
+      font-size: 25px;
+      text-decoration: none;
     }
 </style>
 
 <body>
 
-<button onclick="topFunction()" id="myBtn" title="Scroll up">TOP</button>
+<button onclick="topFunction()" id="myBtn" title="Scroll up">^</button>
 
 <script>
 //Get the button
@@ -108,51 +175,58 @@ function topFunction() {
 }
 </script>
 
+<h3 class="header">
+  <a href="#browse" class="menulink">Browse</a>
+  <a href="#test" class="menulink">Test Our Fonts</a>
+  <a href="#about" class="menulink">About</a>
+  <a href="#join" class="menulink">Join</a>
+  <a href="testing.html" class="headerlink">~ Kelly Type Co. ~</a>
+</h3>
 
-<center><h1 class="title">Generic Italian Restaurant</h1></center>
+<div class="top">
+  <h1 class="notice">
+    <a href="https://fonts.google.com/specimen/Epilogue" target="_blank" class="epilogue" id="browse">Epilogue</a>
+    <a href="https://fonts.google.com/specimen/Fjalla+One" target="_blank" class="fjalla">Fjalla One</a>
+  </h1>
 
-<div class="left">
-  <h1 class="subtitle">About Us</h1>
-  <p>Here at Generic Italian Restaurant, we strive to be average. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h1 class="notice">
+    <a href="https://fonts.google.com/specimen/Hammersmith+One" target="_blank" class="hammer">Hammersmith One</a>
+    <a href="https://fonts.google.com/specimen/Abril+Fatface" target="_blank" class="abril">Abril Fatface</a>
+  </h1>
 </div>
 
-<div class="middle">
-  <h1 class="subtitle">Dining</h1>
-  <p>We use the most normal ingredients for our generic dishes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="notice">
+  <p class="largetext">Hello there! This is a web design project from me. Kelly Type Co. does not exist and all the fonts on this page are from <a href="https://fonts.google.com/" target="_blank" class="link">Google Fonts</a>.</p>
 </div>
 
-<div class="right">
-  <h1 class="subtitle">Catering</h1>
-  <p class="padddingonthebottom">Our ordinary catering service will reach your low expectations. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="tryit">
+  <p class="testheader" id="test">Test out our fonts!</p>
+  <p contenteditable="true" class="etype">This is Epilogue! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="etype">Download Epilogue <a href="https://fonts.google.com/specimen/Epilogue" target="_blank" class="link">here</a>.</p>
+
+  <p contenteditable="true" class="ftype">This is Fjalla One! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="ftype">Download Fjalla One <a href="https://fonts.google.com/specimen/Fjalla+One" target="_blank" class="link">here</a>.</p>
+
+  <p contenteditable="true" class="htype">This is Hammersmith One! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="htype">Download Hammersmith One <a href="https://fonts.google.com/specimen/Hammersmith+One" target="_blank" class="link">here</a>.</p>
+
+  <p contenteditable="true" class="atype">This is Abril Fatface! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="atype">Download Abril Fatface <a href="https://fonts.google.com/specimen/Abril+Fatface" target="_blank" class="link">here</a>.</p>
 </div>
 
-<br><br><br>
-
-<center><img src="photos/Separators.png" class="sep"></center>
-
-<br>
-
-<h1 class="subtitle">Our Chefs</h1>
-
-<div class="left">
-  <center><img src="photos/manchef.jpg" class="portrait"></center>
-  <center><h3>John Smith</h3></center>
-  <center><p>John Smith has gone to an average culinary school and graduated with no specialized skills. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></center>
+<div class="notice">
+  <p class="largetext" id="about">About Kelly Type Co.</p>
+  <p>Kelly Type Co. is three friends' side project, so all our fonts are free for personal and commercial use. If you enjoy our fonts, consider <a href="https://www.buymeacoffee.com/" class="link" target="_blank">buying us a coffee</a>. Also, Kelly Type Co. is fake, so don't believe anything that is put here. However, since these fonts come from <a href="https://fonts.google.com/" class="link" target="_blank">Google Fonts</a> they are actually free for personal and commercial use.</p>
 </div>
 
-<div class="middle">
-  <center><img src="photos/ladychef.png" class="portrait"></center>
-  <center><h3>Joanna Smithens</h3></center>
-  <center><p>Joanna Smithens is a generic chef who learned all her normal skills at home. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></center>
+<div class="notice">
+  <p class="mediumtext" id="join">Join our newsletter to be the first to know about new fonts and more!</p>
+  <form>
+    <input type="email" placeholder="Your email address" class="form">
+    <input type="submit" value="Join" class="formbutton">
+  </form>
+  <br><br>
 </div>
-
-<div class="right">
-  <center><img src="photos/secondmanchef.jpg" class="portrait"></center>
-  <center><h3>Johnny Smithy</h3></center>
-  <center><p>Johnny Smithy graduated from an ordinary culinary school as a generic chef. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></center>
-</div>
-
-
 
 </body>
 </html>

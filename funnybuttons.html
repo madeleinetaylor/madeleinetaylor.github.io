@@ -134,6 +134,10 @@ h2{
   border-color: black;
   padding: 5px 5px;
 }
+#blur{
+  filter: blur(50px) hue-rotate(180deg);
+  width: 500px;
+}
 </style>
 
 <body>
@@ -269,6 +273,78 @@ function topFunction() {
 
 <br><br><br>
 
+<script>
+  function reveal(){
+    document.getElementById('blur').style.filter="blur(0px) hue-rotate(0deg)";
+  }
+  function reset(){
+    document.getElementById('blur').style.filter="blur(50px) hue-rotate(180deg)";
+  }
+</script>
+
+<h2>Guess what is in the image</h2>
+
+<img src="photos/person.jpg" id="blur">
+<br>
+<button class="button" onclick="reveal();">Reveal</button>
+<button class="button" onclick="reset();">Reset</button>
+
+<br><br><br>
+
+<script>
+
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+  .quote1{
+    border-left: 13px solid #b5e1da;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: none;
+  }
+  .quote2{
+    border-top: 2px double #b5e1da;
+    border-bottom: 2px double #b5e1da;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+  }
+  .quote3{
+    background-color: white;
+    padding: 10px;
+    display: none;
+  }
+  .gradientquote{
+    background: linear-gradient(45deg, hsla(170, 42%, 80%, 1) 0%, hsla(253, 59%, 74%, 1) 100%);
+    padding: 10px;
+    display: none;
+  }
+</style>
+
+<h2>View different quote boxes</h2>
+<div class="quote1" id="quoteone">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><i>Lorem Ipsum</i></p>
+</div>
+
+<div class="quote2" id="quotetwo">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi nullam vehicula ipsum a arcu cursus. Posuere morbi leo urna molestie at elementum eu facilisis.</p>
+<p><i>Lorem Ipsum</i></p>
+</div>
+
+<div class="gradientquote" id="quotethree">
+  <div class="quote3">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p><i>Lorem Ipsum</i></p>
+  </div>
+</div>
+
+<button class="button">Quote #1</button><button class="button">Quote #2</button><button class="button">Quote #3</button>
+
+<br><br><br>
 </div>
 
 <div class="right">
@@ -464,6 +540,64 @@ function topFunction() {
 </form>
 <br>
 <button class="button" onclick="answer();">Show answers</button> <button class="button" onclick="resetmath();">Reset</button>
+
+<br><br><br>
+
+<script>
+  function showdef(a){
+    document.getElementById(a).style.display="block";
+  }
+</script>
+
+<h2>Click on the words to show the definitions of these obscure words</h2>
+
+<p onclick="showdef(8);"><strong>absquatulate</strong></p>
+<p id="8" style="display: none;">To leave somewhere abruptly</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(9);"><strong>breatharian</strong></p>
+<p id="9" style="display: none;">a person who believes that it is possible, through meditation, to reach a level of consciousness where one can exist on air alone</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(10);"><strong>cybersquatting</strong></p>
+<p id="10" style="display: none;">the practice of registering well-known names as Internet domain names, in the hope of reselling them at a profit</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(11);"><strong>deipnosophist</strong></p>
+<p id="11" style="display: none;">a person skilled in the art of dining and dinner-table conversation</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(12);"><strong>eucatastrophe</strong></p>
+<p id="12" style="display: none;">a happy ending to a story</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(13);"><strong>floccinaucinihilipilification</strong></p>
+<p id="13" style="display: none;">the action or habit of estimating something as worthless</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(14);"><strong>gobemouche</strong></p>
+<p id="14" style="display: none;">a gullible or credulous listener</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(15);"><strong>humdudgeon</strong></p>
+<p id="15" style="display: none;">an imaginary illness</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(16);"><strong>incunabula</strong></p>
+<p id="16" style="display: none;">books printed before 1501</p>
+
+<div style="border-bottom: 1px solid black;"></div>
+
+<p onclick="showdef(17);"><strong>jumentous</strong></p>
+<p id="17" style="display: none;">resembling horse's urine</p>
 
 <br><br><br>
 

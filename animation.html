@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+</head>
+<body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+    ::-webkit-scrollbar {width: 0px;}
+    ::-webkit-scrollbar-track {display: none;}
+    ::-webkit-scrollbar-thumb {display: none;}
+    body{
+        font-family: Lexend Zetta;
+        -moz-user-select: none;
+    }
+    .start{
+        font-size: 100px;
+        text-align: center;
+        color: white;
+    }
+    .start::before{
+        content: "hello there :)";
+        animation-name: start;
+        animation-duration: 10s;
+        animation-delay: 0.75s;
+    }
+    .start::after{
+        content: "how are you?";
+        animation-name: how;
+        animation-duration: 10s;
+        animation-delay: 11s;
+    }
+    @keyframes start{
+        0% {color: white;}
+        10% {color: black;}
+        20% {color: black;}
+        30% {color: black;}
+        40% {color: #1eb2a6}
+        50% {color: #1eb2a6}
+        60% {color: #f67575;}
+        70% {color: #f67575;}
+        80% {color: #f6ba27}
+        90% {color: #f6ba27}
+        100% {color: white;}
+    }
+    @keyframes how{
+        0% {color: white;}
+        10% {color: black;}
+        20% {color: black;}
+        30% {color: black;}
+        40% {color: #1eb2a6}
+        50% {color: #1eb2a6}
+        60% {color: #f67575;}
+        70% {color: #f67575;}
+        80% {color: #f6ba27}
+        90% {color: #f6ba27}
+        100% {color: white;}
+    }
+</style>
+
+<h1 class="start"></h1>
+
+</body>
+</html>
